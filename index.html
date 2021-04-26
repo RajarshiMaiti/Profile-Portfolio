@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body>
+<!-- ChatBot -->
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello! How can I help you" name="category">
+        <option value="WebDevelopment">Website Development ?</option>
+        <option value="Cloud Assistance">Cloud Assistance ?</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="WebDevelopment">
+          <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">    
+        </div>
+        <div data-conv-case="Cloud Assistance" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Please, enter your company name"> 
+        </div>
+      </div>
+
+      <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+      <select data-conv-question="Please Confirm">
+        <option value="Yes">Confirm</option>
+      </select>
+
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
+
+<header class="header">
+	<div class="container-fluid">
+		<div class="row d-flex justify-content-between">
+			<div class="col-md-auto">
+				<nav class="main_nav">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About Me</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact Me</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>		
+	</div>
+</header>	
+
+<div class="banner d-flex align-items-center" style="background-image: url('images/scenery.jpg');" id="home">
+	<ul class="socila_links">
+		<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	</ul>	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="banner_cont">
+					<h1>Rajarshi Maiti</h1>
+					<p>Cloud Consultant, Web Developer, Analyst </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>			
+
+<div class="about-section" id="about">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-5 text-justify">
+				<h2 class="bdr-btm">More About Rajarshi Maiti</h2>
+				<p>UCC Subject Matter Expert on Cloud Products. I am also experienced on Web development using front end and back end technologies. I am also an Analyst who can visualize data and conclude from the visualized data. I have more than 2.5 years of experinence in Information Technology Industry. </p>
+				<a href="#contact" class="btn1">Contact Me</a>	
+			</div>
+			<div class="col-md">
+				<div class="about-box">
+					<h3 class="bdr-btm">Education</h3>
+					<ul>
+						<li><strong>SRM University</strong> <br> B.Tech Mechanical Engineering.</li>
+						<li><strong>Gaurav High School</strong> <br> Higher Secondary School.</li>
+						<li><strong>J.H. Ambani School </strong> <br> Secondary School</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="about-box">
+					<h3 class="bdr-btm">Experience</h3>
+					<ul>
+						<li><strong>Subject Matter Expert.</strong> <br> Unified Communications Collaboration. </li>
+						<li><strong>Technical Consultant</strong> <br> Microsoft Cloud Technologies.</li>
+						<li><strong>Web Developer</strong> <br> JavaScript, NodeJS, Express JS, Angular, CSS3, HTML5, JQuery, Bootstrap, MySQL, MongoDB.</li>
+						<li><strong>Projects</strong> <br> https://github.com/RajarshiMaiti </li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+
+<div class="portfolio-section" id="portfolio">
+	<div id="port_pop_pic_bg"></div>
+	<div id="port_pop_pic"></div>
+	<div class="container-fluid">
+		<h2 class="text-center bdr-btm bdr-btm-center">Portfolio</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/cloud1.jpg');">
+					<h3>Cloud Consultant</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/web.webp');">
+					<h3>Web Developer</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/data\ analyst.jpg');">
+					<h3>Data Analyst</h3>
+				</div>		
+			</div>
+			
+					
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="contact-section d-md-flex" id="contact">
+  <div class="col-md-6 col-12 contact_section_center">
+    <div class="contact_box">
+      <i class="fa fa-phone"></i>
+      <h3>Phone</h3>
+      <p>+91 9137166127</p>
+    </div>
+    <div class="contact_box">
+      <i class="fa fa-envelope"></i>
+      <h3>Email</h3>
+      <p>rajmaiti15@gmail.com</p>
+    </div>
+    <div class="contact_box">
+      <i class="fa fa-map-marker"></i>
+      <h3>Address</h3>
+      <p>Navi Mumbai, Maharashtra, India</p>
+    </div>
+  </div>
+       </form>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+	portfolioList = document.querySelectorAll('.portfolio-box');
+	portfolioList.forEach(function(portfolioPic) {
+		portfolioPic.addEventListener('click',function(){
+			bg = this.style.backgroundImage;
+			document.getElementById('port_pop_pic_bg').classList.add("active")
+			document.getElementById('port_pop_pic').style.backgroundImage = bg
+			document.getElementById('port_pop_pic').classList.add("active")
+		});	
+	})
+	document.getElementById('port_pop_pic_bg').addEventListener('click',function(){
+			document.getElementById('port_pop_pic_bg').classList.remove("active")
+			document.getElementById('port_pop_pic').classList.remove("active")
+	})
+</script>
+
+</body>
+</html>
